@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(0, 12, 39);
+}
+
 #first-bg,#second-bg,#kZielonka{
   animation: firstBg 3s ease;
 }
@@ -15,12 +22,6 @@
   }
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  color: rgb(0, 12, 39);
-}
 .navbar {
   padding: .8rem;
 }
@@ -104,7 +105,7 @@ html, body {
   color: #000;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-github:hover,.fa-youtube:hover{
-  color: #d5d5d5;
+  color: #ed75af;
 }
 
 footer{
@@ -204,7 +205,7 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('img/mac.png');
+  background-image: url('img/mac.jpg');
   position: fixed;
   display: block;
   top: 0;
