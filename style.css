@@ -159,6 +159,9 @@ footer a {
   }
 }
 @media (max-width: 576px) {
+  .lead{
+    font-size: 100%;
+  }
   .carousel-caption{
     top: 40%;
   }
