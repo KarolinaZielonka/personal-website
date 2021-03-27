@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 html, body {
   height: 100%;
   width: 100%;
@@ -20,6 +22,18 @@ html, body {
     opacity: 1;
     transform: scale(1);
   }
+}
+#logo{
+  font-family: 'Sacramento', cursive;
+}
+#logo::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
 }
 
 .navbar {
