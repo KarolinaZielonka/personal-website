@@ -6,7 +6,7 @@ particlesJS.load("root", "assets/particles.json", () =>
 /* logo typing */
 
 let logoSpan = document.getElementById("logo");
-let textForLogo = "kZielonka";
+let textForLogo = "Karolina Zielonka";
 let i = 0;
 
 function logo() {
