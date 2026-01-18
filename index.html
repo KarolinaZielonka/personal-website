@@ -1,167 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>kZielonka</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karolina Zielonka — Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">KZ</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">O mnie</a>
+                <a href="#skills" class="nav-link">Umiejętności</a>
+                <a href="#interests" class="nav-link">Zainteresowania</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md ">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#">
-			<h1><span id="logo"></span></h1>
-			</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon">
-				<i class="fas fa-bars"></i>
-			</span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a href="#" class="nav-link"></a>
-				</li>
-				<li class="nav-item">
-					<a href="index.html#about" class="nav-link">O MNIE</a>
-				</li>
-				<li class="nav-item">
-					<a href="index.html#contact" class="nav-link">KONTAKT</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-label">Developer & Student</div>
+                <h1 class="hero-title">
+                    Karolina<br>
+                    Zielonka
+                </h1>
+                <p class="hero-description">
+                    Studentka Informatyki Stosowanej na AGH w Krakowie.<br>
+                    Pasjonatka technologii, Python oraz JavaScript.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Skontaktuj się</a>
+                    <a href="#about" class="btn-secondary">Poznaj mnie</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-	<ul class="carousel-indicators">
-		<li data-target="#slides" data-slide-to="0" class="active"></li>
-		<li data-target="#slides" data-slide-to="1"></li>
-		<li data-target="#slides" data-slide-to="2"></li>
-	</ul>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="img/background.jpg" alt="">
-			<!--<div class="carousel-caption">
-				<h3 class="display-3">Studentka III roku <br> Informatyki Stosowanej na AGH w Krakowie</h3>
-			</div>-->
-		</div>
-		<div class="carousel-item">
-			<img src="img/background2.jpg" alt="">
-		</div>
-		<div class="carousel-item">
-			<img src="img/background3.jpg" alt="">
-		</div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">O mnie</h2>
+                </div>
+                <div class="section-content">
+                    <p class="large-text">
+                        Cześć! Mam na imię Karolina i obecnie studiuję na Akademii Górniczo-Hutniczej 
+                        w Krakowie na kierunku Informatyka Stosowana.
+                    </p>
+                    <p>
+                        Do tworzenia projektów wykorzystuję Pythona oraz JavaScript. Moim marzeniem jest, 
+                        aby w przyszłości pracować, wykorzystując wspomniane technologie. Ciągle rozwijam 
+                        swoje umiejętności, ucząc się nowych frameworków i narzędzi.
+                    </p>
+                    <p>
+                        Wierzę, że technologia ma moc zmieniania świata na lepsze, dlatego chcę być 
+                        częścią tej transformacji.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	</div>
-</div>
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Umiejętności</h2>
+                </div>
+                <div class="section-content">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">HTML & CSS</h3>
+                            <p class="skill-description">
+                                Tworzenie responsywnych i semantycznych stron internetowych 
+                                z dbałością o szczegóły i dostępność.
+                            </p>
+                        </div>
 
-<!--- Welcome Section -->
-<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 id="about" class="display-4"> Poznaj mnie bliżej</h1>
-			<hr>
-			<div class="col-12">
-				<p class="lead">Cześć! Mam na imię Karolina i obecnie studiuje na Akademii Górniczo-Hutniczej w Krakowie na kierunku Informatyka Stosowana. Do tworzenia projektów wykorzystuję Pythona oraz Java Script. Moim marzeniem jest, aby w przyszłości pracować, wykorzystując wspomniane technologie. </p>
-			</div>
-		</div>
-	</div>
-</div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">Python</h3>
+                            <p class="skill-description">
+                                Programowanie w Pythonie do analizy danych, automatyzacji 
+                                oraz tworzenia aplikacji backendowych.
+                            </p>
+                        </div>
 
-<!--- Three Column Section -->
-<div class="container-fluid padding">
-	<div class="row padding text-center">
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fas fa-code"></i>
-			<i class="fab fa-css3"></i>
-			<h3>HTML5 & CSS</h3>
-			<p></p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fab fa-python"></i>
-			<h3>PYTHON</h3>
-			<p></p>
-		</div>
-		<div class="col-sm-12 col-md-4">
-			<i class="fab fa-js"></i>
-			<h3>JAVA SCRIPT</h3>
-			<p></p>
-		</div>
-	</div>
-	<hr class="my-4">
-</div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">JavaScript</h3>
+                            <p class="skill-description">
+                                Tworzenie interaktywnych interfejsów użytkownika 
+                                oraz dynamicznych aplikacji webowych.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--- Fixed background -->
-<figure>
-	<div class="fixed-wrap">
-		<div id="fixed">
-			<div class="root" id="root" ></div>
-		</div>
-	</div>
-</figure>
-<!--- Two Column Section -->
-<div class="container padding">
-	<div class="row padding text-center">
-		<div class="col-md-12 col-lg-8">
-			<br>
-			<h2 class="text-center">Zainteresowania</h2>
-			<br>
-			<p class="lead">Poza ciągła nauką nowych technologii informatycznych, znajduję również czas na ulubione sportowe aktywności na świerzym powietrzu.</p>
-			<p class="lead">Moimi ulubionymi są: jazda na rowerze, bieganie oraz zdobywanie Tatrzańskich szczytów. Kiedy pogoda nie sprzyja, lubię grać w gry multiplayer z moimi znajomymi.</p>
-			<br>
-		</div>
-		<div class="col-md-8 col-lg-4">
-			<img src="img/ja.jpg" class="img-thumbnail" alt="">
-		</div>
-	</div>
-</div>
-<hr class="col-8">
+    <!-- Interests Section -->
+    <section id="interests" class="section">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Zainteresowania</h2>
+                </div>
+                <div class="section-content">
+                    <p class="large-text">
+                        Poza ciągłą nauką nowych technologii informatycznych, znajduję również 
+                        czas na ulubione sportowe aktywności na świeżym powietrzu.
+                    </p>
+                    
+                    <div class="interests-list">
+                        <div class="interest-item">
+                            <div class="interest-icon">🚴‍♀️</div>
+                            <div>
+                                <h3>Jazda na rowerze</h3>
+                                <p>Eksploracja nowych tras i podziwianie krajobrazów</p>
+                            </div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div class="interest-icon">🏃‍♀️</div>
+                            <div>
+                                <h3>Bieganie</h3>
+                                <p>Regularne treningi i udział w lokalnych biegach</p>
+                            </div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div class="interest-icon">⛰️</div>
+                            <div>
+                                <h3>Góry i wspinaczka</h3>
+                                <p>Zdobywanie Tatrzańskich szczytów i górskie wędrówki</p>
+                            </div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div class="interest-icon">🎮</div>
+                            <div>
+                                <h3>Gaming</h3>
+                                <p>Gry multiplayer ze znajomymi w deszczowe dni</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--- Connect -->
-<div id="contact" class="container-fluid padding">
-	<div class="row text-center padding">
-		<div class="col-12">
-			<h2>TU MNIE ZNAJDZIESZ:</h2>
-		</div>
-		<div class="col-12 social padding">
-			<a href="https://www.linkedin.com/in/karolina-zielonka-028a15183/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-			<a href="https://www.instagram.com/kzielonkaa/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-			<a href="https://www.facebook.com/kzielonka"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-			<a href="https://github.com/KarolinaZielonka"><i class="fab fa-github" aria-hidden="true"></i></a>
-			<!--<a href="https://youtu.be/EngTFUq6T_o?t=33"><i class="fab fa-youtube" aria-hidden="true"></i></a>-->
-		</div>
-	</div>
-</div>
-<!--- Footer -->
-<footer>
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="col-12">
-				<h1 class="p-3 mb-2">&commat;kzielonkaa</h1>
-				<hr class="light">
-				<p>792-893-631</p>
-				<p>k99zielonka@gmail.com</p>
-				<p>Dąbrowa Górnicza | Kraków</p>
-			</div>
-			<div class="col-12">
-				<h5>&copy; KarolinaZielonka | 2021</h5>
-			</div>
-			
-		</div>
-	</div>
-</footer>
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Kontakt</h2>
+                </div>
+                <div class="section-content">
+                    <p class="large-text">
+                        Masz pytania lub chcesz nawiązać współpracę?<br>
+                        Skontaktuj się ze mną!
+                    </p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:k99zielonka@gmail.com" class="contact-link">
+                                k99zielonka@gmail.com
+                            </a>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-label">Telefon</span>
+                            <a href="tel:+48792893631" class="contact-link">
+                                792 893 631
+                            </a>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-label">Lokalizacja</span>
+                            <span class="contact-text">
+                                Dąbrowa Górnicza / Kraków
+                            </span>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-label">GitHub</span>
+                            <a href="https://github.com/KarolinaZielonka" class="contact-link" target="_blank" rel="noopener">
+                                @KarolinaZielonka
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="./particles/particles.min.js"></script>
-<script src="index.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2026 Karolina Zielonka</p>
+                <p>Zaprojektowane z pasją</p>
+            </div>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
