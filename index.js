@@ -64,13 +64,6 @@ cards.forEach((card, index) => {
     }
 });
 
-// Menu button interaction (placeholder for future mobile menu)
-const menuBtn = document.querySelector('.menu-btn');
-menuBtn.addEventListener('click', () => {
-    // This can be expanded for a mobile menu in the future
-    console.log('Menu button clicked');
-});
-
 // Add subtle parallax effect on scroll
 let ticking = false;
 

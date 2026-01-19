@@ -1,243 +1,434 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karolina Zielonka — Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header with Theme Toggle -->
     <header class="header">
-        <div class="container">
-            <button class="menu-btn" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <button class="theme-toggle" aria-label="Toggle theme">
-                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
-        </div>
+      <div class="container">
+        <div></div>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main class="main">
-        <div class="container">
-            
-            <!-- About Section -->
-            <section class="section-title">
-                <h2>About</h2>
-            </section>
-
-            <!-- Profile Card -->
-            <div class="card profile-card">
-                <div class="card-content">
-                    <div class="profile-header">
-                        <div>
-                            <div class="profile-label">KAROLINAZIELONKA</div>
-                            <h1 class="profile-name">Cześć, jestem Karolina 👋</h1>
-                            <p class="profile-description">
-                                Studentka Informatyki Stosowanej na AGH w Krakowie, 
-                                zainteresowana tworzeniem aplikacji w Pythonie i JavaScript.
-                            </p>
-                        </div>
-                        <div class="profile-avatar">
-                            <div class="avatar-circle">
-                                <span class="avatar-emoji">🧑‍💻</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#contact" class="btn-learn-more">
-                        <span>DOWIEDZ SIĘ WIĘCEJ</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Links Card -->
-            <div class="card links-card">
-                <div class="card-header">
-                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-                    </svg>
-                    <h3>LINKI</h3>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/KarolinaZielonka" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/karolina-zielonka" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:k99zielonka@gmail.com" target="_blank" rel="noopener" class="social-link" aria-label="Email">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </a>
-                    <a href="tel:+48792893631" target="_blank" rel="noopener" class="social-link" aria-label="Phone">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Skills Section -->
-            <section class="section-title">
-                <h2>Umiejętności</h2>
-            </section>
-
-            <div class="card">
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <div class="skill-icon-wrapper">
-                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="skill-name">HTML & CSS</h3>
-                            <p class="skill-desc">Tworzenie responsywnych stron internetowych</p>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-icon-wrapper">
-                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                                <path d="M2 17l10 5 10-5"></path>
-                                <path d="M2 12l10 5 10-5"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="skill-name">Python</h3>
-                            <p class="skill-desc">Programowanie i analiza danych</p>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-icon-wrapper">
-                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="skill-name">JavaScript</h3>
-                            <p class="skill-desc">Tworzenie interaktywnych aplikacji</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Interests Section -->
-            <section class="section-title">
-                <h2>Zainteresowania</h2>
-            </section>
-
-            <div class="card">
-                <p class="card-intro">
-                    Poza ciągłą nauką nowych technologii informatycznych, znajduję również 
-                    czas na ulubione sportowe aktywności na świeżym powietrzu.
+      <div class="container">
+        <!-- Profile Card -->
+        <div class="card profile-card">
+          <div class="card-content">
+            <div class="profile-header">
+              <div>
+                <div class="profile-label">KAROLINAZIELONKA</div>
+                <h1 class="profile-name">Hi there, I'm Karolina! ✨</h1>
+                <p class="profile-subtitle">💻 React & React Native Developer | Frontend Lead</p>
+                <p class="profile-description">
+                  Based in Cracow, I am a frontend developer dedicated to building polished web and mobile experiences. Currently, I lead the frontend development of my project, focusing on maintainability and close collaboration with backend teams.
                 </p>
-                <div class="interests-grid">
-                    <div class="interest-item">
-                        <span class="interest-emoji">🚴‍♀️</span>
-                        <div>
-                            <h3>Jazda na rowerze</h3>
-                            <p>Eksploracja nowych tras</p>
-                        </div>
-                    </div>
-                    <div class="interest-item">
-                        <span class="interest-emoji">🏃‍♀️</span>
-                        <div>
-                            <h3>Bieganie</h3>
-                            <p>Regularne treningi</p>
-                        </div>
-                    </div>
-                    <div class="interest-item">
-                        <span class="interest-emoji">⛰️</span>
-                        <div>
-                            <h3>Tatry</h3>
-                            <p>Zdobywanie szczytów</p>
-                        </div>
-                    </div>
-                    <div class="interest-item">
-                        <span class="interest-emoji">🎮</span>
-                        <div>
-                            <h3>Gaming</h3>
-                            <p>Gry multiplayer</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-
-            <!-- Contact Section -->
-            <section id="contact" class="section-title">
-                <h2>Kontakt</h2>
-            </section>
-
-            <div class="card contact-card">
-                <p class="card-intro">
-                    Masz pytania lub chcesz nawiązać współpracę? Skontaktuj się ze mną!
-                </p>
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <span class="contact-label">Email</span>
-                        <a href="mailto:k99zielonka@gmail.com" class="contact-value">k99zielonka@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Telefon</span>
-                        <a href="tel:+48792893631" class="contact-value">792 893 631</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Lokalizacja</span>
-                        <span class="contact-value">Dąbrowa Górnicza / Kraków</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">GitHub</span>
-                        <a href="https://github.com/KarolinaZielonka" target="_blank" rel="noopener" class="contact-value">@KarolinaZielonka</a>
-                    </div>
-                </div>
-            </div>
-
+            <a href="#contact" class="btn-learn-more">
+              <span>GET IN TOUCH</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
         </div>
+
+        <!-- Links Card -->
+        <div class="card links-card">
+          <div class="card-header">
+            <svg
+              class="card-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+              ></path>
+              <path
+                d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+              ></path>
+            </svg>
+            <h3>LINKS</h3>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/KarolinaZielonka"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/karolina-zielonka"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a
+              href="mailto:k99zielonka@gmail.com"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              aria-label="Email"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <section class="section-title">
+          <h2>Skills</h2>
+        </section>
+
+        <div class="card skills-card">
+          <div class="skills-grid">
+            <!-- Core Technologies -->
+            <div class="skill-category">
+              <h3 class="skill-category-title">Core Technologies</h3>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">JavaScript & TypeScript</h4>
+                  <p class="skill-desc">ES6+, async patterns, type-safe codebases</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">React & React Native</h4>
+                  <p class="skill-desc">Production mobile apps, hooks, performance optimization</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Next.js</h4>
+                  <p class="skill-desc">SSR, SSG, App Router, API routes</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Styling & UI -->
+            <div class="skill-category">
+              <h3 class="skill-category-title">Styling & UI</h3>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Tailwind CSS</h4>
+                  <p class="skill-desc">Utility-first styling, responsive design</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Styled-components</h4>
+                  <p class="skill-desc">CSS-in-JS, theming, dynamic styles</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Animations & A11y</h4>
+                  <p class="skill-desc">Framer Motion, Reanimated, WCAG compliance</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- State & Data -->
+            <div class="skill-category">
+              <h3 class="skill-category-title">State & Data</h3>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M12 1v6m0 6v10"></path>
+                    <path d="M21 12h-6m-6 0H1"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Zustand & MobX</h4>
+                  <p class="skill-desc">Global state, reactive stores, persistence</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.89 15.672L6.255.461A.542.542 0 017.27.288l2.543 4.771zm16.794 3.692l-2.25-14a.54.54 0 00-.919-.295L3.316 19.365l7.856 4.427a1.621 1.621 0 001.588 0zM14.3 7.147l-1.82-3.482a.542.542 0 00-.96 0L3.53 17.984z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Firebase & Supabase</h4>
+                  <p class="skill-desc">Auth, Firestore, real-time databases</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                    <path d="M9 14l2 2 4-4"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Navigation</h4>
+                  <p class="skill-desc">React Navigation, React Router, Expo Router</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quality & DevOps -->
+            <div class="skill-category">
+              <h3 class="skill-category-title">Quality & DevOps</h3>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Testing</h4>
+                  <p class="skill-desc">Jest, React Testing Library, TDD approach</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Git & GitHub</h4>
+                  <p class="skill-desc">Version control, code reviews, collaboration</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon-wrapper">
+                  <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.186m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.185-.186h-2.12a.186.186 0 00-.185.185v1.888c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="skill-name">Docker</h4>
+                  <p class="skill-desc">Containerization, development environments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Technologies -->
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">Expo</span>
+            <span class="tech-tag">Performance Optimization</span>
+          </div>
+        </div>
+
+        <!-- Interests Section -->
+        <section class="section-title">
+          <h2>Hobby</h2>
+        </section>
+
+        <div class="card hobby-card">
+          <p class="card-intro">
+            When I'm not coding, you'll find me outdoors pushing my limits or diving into a good book.
+          </p>
+          <div class="hobby-grid">
+            <div class="hobby-item hobby-item--featured">
+              <div class="hobby-icon-wrapper">
+                <svg class="hobby-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="5" cy="18" r="3"></circle>
+                  <circle cx="19" cy="18" r="3"></circle>
+                  <path d="M12 2l-3.5 7L5 18"></path>
+                  <path d="M19 18l-7-9-4.5 0"></path>
+                  <path d="M12 9l7 9"></path>
+                </svg>
+              </div>
+              <div class="hobby-content">
+                <h3 class="hobby-name">Cycling</h3>
+                <p class="hobby-desc">Road & gravel adventures</p>
+              </div>
+            </div>
+
+            <div class="hobby-item hobby-item--featured">
+              <div class="hobby-icon-wrapper">
+                <svg class="hobby-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M13 4v4l3-1v6"></path>
+                  <path d="M18 20c-1.5-1.5-3-2-6-2s-4.5.5-6 2"></path>
+                  <circle cx="12" cy="7" r="3"></circle>
+                  <path d="M7 13l-2 7"></path>
+                  <path d="M17 13l2 7"></path>
+                  <path d="M9 20l1.5-5"></path>
+                  <path d="M15 20l-1.5-5"></path>
+                </svg>
+              </div>
+              <div class="hobby-content">
+                <h3 class="hobby-name">Running</h3>
+                <p class="hobby-desc">From 5K to half marathons</p>
+              </div>
+            </div>
+
+            <div class="hobby-item">
+              <div class="hobby-icon-wrapper">
+                <svg class="hobby-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 20L8 16L12 19L16 14L20 18"></path>
+                  <path d="M14 10L17 7L20 10"></path>
+                  <circle cx="17" cy="5" r="1"></circle>
+                </svg>
+              </div>
+              <div class="hobby-content">
+                <h3 class="hobby-name">Mountain Hiking</h3>
+                <p class="hobby-desc">Day trips in the mountains</p>
+              </div>
+            </div>
+
+            <div class="hobby-item">
+              <div class="hobby-icon-wrapper">
+                <svg class="hobby-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  <line x1="8" y1="6" x2="16" y2="6"></line>
+                  <line x1="8" y1="10" x2="14" y2="10"></line>
+                </svg>
+              </div>
+              <div class="hobby-content">
+                <h3 class="hobby-name">Reading</h3>
+                <p class="hobby-desc">Sci-fi, fantasy & self-development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-title">
+          <h2>Contact</h2>
+        </section>
+
+        <div class="card contact-card">
+          <p class="card-intro">
+            Interested in working together? I'd love to hear from you!
+          </p>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:k99zielonka@gmail.com" class="contact-value"
+                >k99zielonka@gmail.com</a
+              >
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">GitHub</span>
+              <a
+                href="https://github.com/KarolinaZielonka"
+                target="_blank"
+                rel="noopener"
+                class="contact-value"
+                >@KarolinaZielonka</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>© 2026 Karolina Zielonka • Zaprojektowane z pasją</p>
-        </div>
+      <div class="container">
+        <p>© 2026 Karolina Zielonka • Made with passion</p>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
